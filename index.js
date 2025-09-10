@@ -7,6 +7,6 @@ app.get('/',(req,res)=>{
   res.send(`.env 테스트:${process.env.DATABASE_NAME}`)
 })
 
-app.listen(PORT,()=>{
-  console.log(`Example app listening on port ${PORT}`)
-})
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server listening on port ${PORT}`)
+});
